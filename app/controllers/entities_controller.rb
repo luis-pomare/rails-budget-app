@@ -20,6 +20,8 @@ class EntitiesController < ApplicationController
   # POST /entities or /entities.json
   def create
     @entity = Entity.new(entity_params)
+    @entity.user = current_user
+    @entity.group = Group.find(params[:group_id])
 
     respond_to do |format|
       if @entity.save
