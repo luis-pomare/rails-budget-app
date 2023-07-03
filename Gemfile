@@ -60,3 +60,6 @@ group :development do
   # linters
   gem 'rubocop', '>= 1.0', '< 2.0'
 end
+
+# user authentication
+gem 'devise'
