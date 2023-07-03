@@ -1,14 +1,27 @@
+<% case controller_name %>
+<% when 'entities' %>
+  <% current_view = 'Transactions' %>
+  <% if action_name == 'new' %>
+    <% current_view = 'Create a new transaction' %>
+  <% end %>
+<% when 'groups' %>
+  <% current_view = 'Categories' %>
+<% else %>
+  <% current_view = '' %>
+<% end %>  
+
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <%= link_to "Categories", groups_path, class: "nav-link" %>
-            <%= link_to "Transactions", root_path, class: "nav-link" %>
-            <%= link_to "Create a new transaction", new_entity_path, class: "nav-link" %>
-          </div>
-        </div>
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <%= link_to "Categories", groups_path, class: "nav-link" %>
+        <%= link_to "Transactions", root_path, class: "nav-link" %>
+        <%= link_to "Create a new transaction", new_entity_path, class: "nav-link" %>
       </div>
-    </nav>
+    </div>
+    <h4><%= current_view %></h4>
+  </div>
+</nav>
