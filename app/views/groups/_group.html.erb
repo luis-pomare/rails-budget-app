@@ -1,12 +1,9 @@
-<div id="<%= dom_id group %>">
-  <p>
-    <strong>Name:</strong>
-    <%= group.name %>
-  </p>
-
-  <p>
-    <strong>Icon:</strong>
-    <%= group.icon %>
-  </p>
-
-</div>
+<%= link_to  group, class: 'text-decoration-none' do%>
+  <article class='card container d-flex flex-row'>
+    <img src=<%= image_path(group.icon) %> class="img-thumbnail w-25 m-1" alt="Image">
+    <div class="card-body">
+      <h5 class="card-title"><%= group.name %></h5>
+      <p class="card-text">Card content goes here.</p>
+    </div>
+  </article>
+<% end %>
