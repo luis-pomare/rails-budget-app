@@ -1,8 +1,4 @@
-<% @image_filenames.each do |filename| %>
-    <img src="<%= asset_path(filename) %>" alt="<%= filename %>" width="5%">
-<% end %>
-
-<%= render "form", group: @group %>
+<%= render "form", group: @group, image_filenames: @image_filenames %>
 
 <br>
 

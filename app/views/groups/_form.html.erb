@@ -16,10 +16,9 @@
     <%= form.text_field :name %>
   </div>
 
-  <div>
-    <%= form.label :icon, style: "display: block" %>
-    <%= form.text_field :icon %>
-  </div>
+  <% @image_filenames.each do |filename| %>
+    <img src="<%= asset_path(filename) %>" alt="<%= filename %>" width="5%">
+  <% end %>
 
   <div>
     <%= form.submit %>
