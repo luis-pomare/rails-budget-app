@@ -13,6 +13,7 @@ class GroupsController < ApplicationController
   # GET /groups/new
   def new
     @group = Group.new
+    @image_filenames = Dir.glob('app/assets/images/*.png').map { |path| File.basename(path) }
   end
 
   # GET /groups/1/edit
