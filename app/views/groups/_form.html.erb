@@ -16,9 +16,16 @@
     <%= form.text_field :name %>
   </div>
 
-  <% @image_filenames.each do |filename| %>
-    <img src="<%= asset_path(filename) %>" alt="<%= filename %>" width="5%">
-  <% end %>
+    <% image_filenames.each do |filename| %>
+
+      <div>
+        <label>
+          <%= form.radio_button :icon, filename %>
+          <%= image_tag(filename, alt: filename) %>
+        </label>
+      </div>
+      
+    <% end %>
 
   <div>
     <%= form.submit %>
