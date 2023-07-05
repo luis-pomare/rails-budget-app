@@ -9,14 +9,7 @@ img {
   width: 30px;
 }
 
-.card {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  width: 95%;
-}
-
 .app_body {
-  background-color: #f0f2f1;
   margin: 0;
   height: 100%;
   overflow: hidden;
