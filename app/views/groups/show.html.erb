@@ -1,7 +1,7 @@
 <%= render @group %>
 
-<% @transactions.each do |transaction| %>
-  <%= render 'transaction', transaction: transaction %>
-<% end %>
-
-<div>
+<div class='lists_container'>
+  <% @transactions.each do |transaction| %>
+    <%= render 'transaction', transaction: transaction %>
+  <% end %>
+</div>
