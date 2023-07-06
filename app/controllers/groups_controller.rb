@@ -8,7 +8,7 @@ class GroupsController < ApplicationController
 
   # GET /groups/1 or /groups/1.json
   def show
-    @transactions = Entity.where(group: @group)
+    @transactions = Entity.where(group: @group).order(id: :desc)
   end
 
   # GET /groups/new
