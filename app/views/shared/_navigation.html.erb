@@ -6,6 +6,9 @@
   <% end %>
 <% when 'groups' %>
   <% current_view = 'Categories' %>
+  <% if action_name == 'show' %>
+    <% current_view = "Transactions per category" %>
+  <% end %>
 <% else %>
   <% current_view = '' %>
 <% end %>  
