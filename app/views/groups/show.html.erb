@@ -1,22 +1,7 @@
-<% @transactions.each do |transaction| %>
-  <%= transaction.name %>
-<% end %>
-
-
-
-
-
-
-
-
-
-<p style="color: green"><%= notice %></p>
-
 <%= render @group %>
 
-<div>
-  <%= link_to "Edit this group", edit_group_path(@group) %> |
-  <%= link_to "Back to groups", groups_path %>
+<% @transactions.each do |transaction| %>
+  <%= render 'transaction', transaction: transaction %>
+<% end %>
 
-  <%= button_to "Destroy this group", @group, method: :delete %>
-</div>
+<div>
