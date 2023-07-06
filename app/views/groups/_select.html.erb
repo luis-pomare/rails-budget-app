@@ -1,9 +1,0 @@
-<%= form_with(url: new_entity_path, method: 'get') do |form| %>
-
-  <%= select_tag :group_id, options_from_collection_for_select(@groups, :id, :name), prompt: "Select one category", required: true %>
-  <div>
-    <%= form.submit 'New transaction'%>
-  </div>
-
-<% end %>
-

@@ -3,7 +3,7 @@ class GroupsController < ApplicationController
 
   # GET /groups or /groups.json
   def index
-    @groups = Group.includes(:entity).where(user: current_user)
+    @groups = Group.includes(:entity).where(user: current_user).order(id: :desc)
   end
 
   # GET /groups/1 or /groups/1.json
@@ -29,7 +29,7 @@ class GroupsController < ApplicationController
 
     respond_to do |format|
       if @group.save
-        format.html { redirect_to new_entity_path(group_id: @group.id), notice: "Group was successfully created." }
+        format.html { redirect_to root_path, notice: "Group was successfully created." }
         format.json { render :show, status: :created, location: @group }
       else
         format.html { render :new, status: :unprocessable_entity }
