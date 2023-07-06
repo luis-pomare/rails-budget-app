@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    <%= render partial: 'shared/navigation' %>
+    <%= render partial: 'shared/navigation' unless controller_name == 'sessions' && action_name == 'new' %>
     <div class='app_body'>
       <%= yield %>
     </div>
