@@ -1,4 +1,4 @@
-<%= form_with(model: @entity, url: "/entities?group_id=#{params[:group_id]}") do |form| %>
+<%= form_with(model: @entity, url: "/entities?group_id=#{params[:group_id]}", html: {class: 'forms_container flex_centered_column'}) do |form| %>
   <% if @entity.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(@entity.errors.count, "error") %> prohibited this @entity from being saved:</h2>
@@ -11,19 +11,8 @@
     </div>
   <% end %>
 
-  <%= select_tag :group_id, options_from_collection_for_select(@groups, :id, :name, params[:group_id]), prompt: "Select one category", required: true %>
-
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
-  </div>
-
-  <div>
-    <%= form.label :amount, style: "display: block" %>
-    <%= form.text_field :amount %>
-  </div>
-
-  <div>
-    <%= form.submit %>
-  </div>
+  <%= select_tag :group_id, options_from_collection_for_select(@groups, :id, :name, params[:group_id]), prompt: "Select one category", required: true, class: "field" %>
+  <%= form.text_field :name, placeholder: 'Name', class: "field" %>
+  <%= form.text_field :amount, placeholder: 'Amount', class: "field" %>
+  <%= form.submit %>
 <% end %>
