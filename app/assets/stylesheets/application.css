@@ -1,6 +1,8 @@
 @import 'categories_index';
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
 @import 'splash';
+@import 'forms';
+@import 'nav';
 
 * {
   margin: 0;
