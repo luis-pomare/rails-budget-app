@@ -11,7 +11,7 @@
     </div>
   <% end %>
 
-  <%= select_tag :group_id, options_from_collection_for_select(@groups, :id, :name), prompt: "Select one category", required: true %>
+  <%= select_tag :group_id, options_from_collection_for_select(@groups, :id, :name, params[:group_id]), prompt: "Select one category", required: true %>
 
   <div>
     <%= form.label :name, style: "display: block" %>
