@@ -27,7 +27,11 @@
       </div>
     </div>
     <h4><%= current_view %></h4>
-    <%= link_to groups_path, class: "nav-link" do %>
+
+    <% back_path = groups_path %>
+    <% back_path = group_path(params[:group_id]) if controller_name == 'entities' && action_name == 'new' && params[:group_id] %>
+
+    <%= link_to back_path, class: "nav-link" do %>
       <i class="fas fa-arrow-left"></i>
     <% end %>
   </div>
