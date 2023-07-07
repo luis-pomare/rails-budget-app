@@ -12,6 +12,7 @@ class EntitiesController < ApplicationController
   # GET /entities/new
   def new
     @entity = Entity.new
+    @groups = Group.where(user: current_user)
   end
 
   # GET /entities/1/edit

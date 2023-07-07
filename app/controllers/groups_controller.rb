@@ -15,7 +15,6 @@ class GroupsController < ApplicationController
   def new
     @group = Group.new
     @image_filenames = Dir.glob('app/assets/images/*.png').map { |path| File.basename(path) }
-    @groups = Group.where(user: current_user)
   end
 
   # GET /groups/1/edit
