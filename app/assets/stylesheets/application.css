@@ -3,6 +3,7 @@
 @import 'splash';
 @import 'forms';
 @import 'nav';
+@import 'new_transaction';
 
 * {
   margin: 0;
@@ -16,7 +17,7 @@ a {
 }
 
 img {
-  width: 30px;
+  width: 75px;
 }
 
 .navbar {

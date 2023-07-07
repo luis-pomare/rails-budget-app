@@ -1,4 +1,4 @@
-<%= form_with(model: group) do |form| %>
+<%= form_with(model: group, html: {class: 'forms_container flex_centered_column'}) do |form| %>
   <% if group.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(group.errors.count, "error") %> prohibited this group from being saved:</h2>
@@ -11,23 +11,20 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
-  </div>
-
+  <%= form.text_field :name, placeholder: 'Name', class: "field" %>
+  
+  <div class='new_transaction_icons_container'>
     <% image_filenames.each do |filename| %>
 
-      <div>
-        <label>
+      <label>
+        <div>
           <%= form.radio_button :icon, filename %>
           <%= image_tag(filename, alt: filename) %>
-        </label>
-      </div>
+        </div>
+      </label>
       
     <% end %>
-
-  <div>
-    <%= form.submit 'Save' %>
   </div>
+
+  <%= form.submit 'Save' %>
 <% end %>
