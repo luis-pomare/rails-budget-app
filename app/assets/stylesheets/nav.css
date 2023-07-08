@@ -1,8 +1,14 @@
 #navbar {
   background-color: #3778c2 !important;
   background-image: linear-gradient(to right, #375ac2, #3799c2, #375ac2);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:
+    'Lucida Sans',
+    'Lucida Sans Regular',
+    'Lucida Grande',
+    'Lucida Sans Unicode',
+    Geneva,
+    Verdana,
+    sans-serif;
   font-weight: 500;
   font-size: 20px;
 }
@@ -10,4 +16,3 @@
 .white_color {
   color: #fff;
 }
-

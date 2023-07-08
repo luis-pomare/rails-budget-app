@@ -7,9 +7,9 @@
 .forms_container {
   height: 100vh;
   background-color: #f0f2f1;
+
   & a {
     opacity: 0.5;
     margin-top: 10px;
   }
 }
-
