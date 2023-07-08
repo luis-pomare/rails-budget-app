@@ -60,12 +60,14 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Video <a name="live-demo"></a>
+
+[Video Link](https://drive.google.com/file/d/1hrfvz6LgOpzh4ayquFoLgQAql3archyd/view?usp=sharing)
+
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Coming soon
+[Live Demo Link](https://rails-budget-app-7bdv.onrender.com/)
 
-<!-- - [Live Demo Link](https://google.com)
--->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
