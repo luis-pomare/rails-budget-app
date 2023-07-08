@@ -1,0 +1,42 @@
+<% case controller_name %>
+<% when 'entities' %>
+  <% current_view = 'Transactions' %>
+  <% if action_name == 'new' %>
+    <% current_view = 'Create a new transaction' %>
+  <% end %>
+<% when 'groups' %>
+  <% current_view = 'Categories' %>
+  <% if action_name == 'show' %>
+    <% current_view = "Transactions per category" %>
+  <% end %>
+<% when 'sessions' %>
+  <% current_view = 'Log in' %>
+<% when 'registrations' %>
+  <% current_view = 'Sign up' %>
+<% else %>
+  <% current_view = controller_name %>
+<% end %>  
+
+<nav id='navbar' class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars white_color"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <%= link_to "Categories", groups_path, class: "nav-link white_color" %>
+        <%= link_to "Create a new category", new_group_path, class: "nav-link white_color" %>
+        <%= link_to "Create a new transaction", new_entity_path, class: "nav-link white_color" %>
+        <%= button_to 'Log_out', destroy_user_session_path, method: :delete %>
+      </div>
+    </div>
+    <h4 class='white_color'><%= current_view %></h4>
+
+    <% back_path = groups_path %>
+    <% back_path = group_path(params[:group_id]) if controller_name == 'entities' && action_name == 'new' && params[:group_id] %>
+
+    <%= link_to back_path, class: "nav-link" do %>
+      <i class="fas fa-arrow-left white_color"></i>
+    <% end %>
+  </div>
+</nav>

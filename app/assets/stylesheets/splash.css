@@ -1,0 +1,34 @@
+.splash_container {
+  height: 100vh;
+}
+
+.splash_title {
+  height: 80%;
+  justify-content: center;
+}
+
+.splash_h1 {
+  font-family: 'Nanum Brush Script', cursive;
+  font-weight: 900;
+  font-size: 50px;
+}
+
+.splash_button_container {
+  justify-content: center;
+  height: 20vh;
+}
+
+.splash_link_one {
+  width: 90%;
+  height: 50px;
+  background-color: #3778c2;
+  border-radius: 3px;
+  justify-content: center;
+  color: #fff;
+}
+
+.splash_link_two {
+  width: 90%;
+  height: 50px;
+  justify-content: center;
+}

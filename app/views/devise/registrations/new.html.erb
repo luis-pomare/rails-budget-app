@@ -1,0 +1,16 @@
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: 'forms_container flex_centered_column'}) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <%= f.text_field :name, placeholder: 'Name', class: "field" %>
+
+  <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Email', class: "field" %>
+  
+  <%= f.password_field :password, autocomplete: "new-password", placeholder: 'Password 6 characters min', class: "field" %>
+  
+  <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: 'Confirm password', class: "field" %>
+  
+  <%= f.submit "Sign up" %>
+  
+  <%= render "devise/shared/links" %>
+<% end %>
+

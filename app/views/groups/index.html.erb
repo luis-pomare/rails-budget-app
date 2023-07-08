@@ -1,0 +1,12 @@
+
+<div class='lists_container'>
+  <% @groups.each do |group| %>
+    <%= render group %>
+  <% end %>
+</div>
+
+<div class='button_container'>
+  <%= link_to new_group_path, class: 'normal_button' do%>
+    <button class='normal_button'>New category</button>
+  <% end %>
+</div>

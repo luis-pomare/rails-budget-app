@@ -1,0 +1,13 @@
+<%= render @group %>
+
+<div class='lists_container'>
+  <% @transactions.each do |transaction| %>
+    <%= render 'transaction', transaction: transaction %>
+  <% end %>
+</div>
+
+<div class='button_container'>
+  <%= link_to new_entity_path(group_id: @group.id), class: 'normal_button' do%>
+    <button class='normal_button'>add a new transaction</button>
+  <% end %>
+</div>
