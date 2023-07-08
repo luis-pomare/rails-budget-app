@@ -1,11 +1,21 @@
-<p style="color: green"><%= notice %></p>
+<%= form_with(model: @entity, url: "/entities", html: {class: 'forms_container flex_centered_column'}) do |form| %>
+  <% if @entity.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(@entity.errors.count, "error") %> prohibited this @entity from being saved:</h2>
 
-<h1>New entity</h1>
+      <ul>
+        <% @entity.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
 
-<%= render "form", entity: @entity %>
+  <% initial_group = nil %>
+  <% initial_group = params[:group_id] if params[:group_id]  %>
 
-<br>
-
-<div>
-  <%= link_to "Back to entities", entities_path %>
-</div>
+  <%= select_tag :group_id, options_from_collection_for_select(@groups, :id, :name, initial_group), prompt: "Select one category", required: true, class: "field" %>
+  <%= form.text_field :name, placeholder: 'Name', class: "field" %>
+  <%= form.text_field :amount, placeholder: 'Amount', class: "field" %>
+  <%= form.submit %>
+<% end %>

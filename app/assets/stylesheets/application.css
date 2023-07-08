@@ -1,15 +1,41 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import 'categories_index';
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+@import 'splash';
+@import 'forms';
+@import 'nav';
+@import 'new_transaction';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 75px;
+}
+
+.navbar {
+  margin: 0;
+  height: 100%;
+}
+
+.lists_container {
+  padding: 10px;
+  background-color: #f0f2f1;
+  height: 100vh;
+  padding-bottom: 300px;
+  overflow-y: scroll;
+}
+
+.flex_centered_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+

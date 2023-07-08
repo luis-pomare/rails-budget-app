@@ -189,5 +189,23 @@ This project is [MIT](./LICENSE) licensed.
 
 The owner of the UI's design is [Gregoire Vella on Behance](https://www.behance.net/gregoirevella), here is the [design guidelines](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=) we followed to build this app.
 
+## Icon images atributions
+
+- <a href="https://www.flaticon.com/free-icons/house" title="house icons">House icons created by Freepik Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/transport" title="transport icons">Transport icons created by geotatah - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/food" title="food icons">Food icons created by Freepik - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/medical-doctor" title="medical doctor icons">Medical doctor icons created by Freepik - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/book" title="book icons">Book icons created by Icon Pond - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/recreation" title="recreation icons">Recreation icons created by Freepik - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/cosmetics" title="cosmetics icons">Cosmetics icons created by iconixar - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/professional" title="professional icons">Professional icons created by Maxim Basinski Premium - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/maintenance" title="maintenance icons">Maintenance icons created by Uniconlabs - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/debt" title="debt icons">Debt icons created by Parzival’ 1997 - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/policy" title="policy icons">Policy icons created by Chanut-is-Industries - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/cents" title="cents icons">Cents icons created by kliwir art - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/gift" title="gift icons">Gift icons created by Eucalyp - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/children" title="children icons">Children icons created by Freepik - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/miscellaneous" title="miscellaneous icons">Miscellaneous icons created by Eucalyp - Flaticon</a>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

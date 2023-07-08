@@ -1,0 +1,8 @@
+.new_transaction_icons_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100vw;
+  place-items: center;
+  padding: 15px;
+}
+

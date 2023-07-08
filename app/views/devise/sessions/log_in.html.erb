@@ -1,0 +1,8 @@
+<%= form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: 'forms_container flex_centered_column'}) do |f| %>
+  <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Email', class: "field" %>
+  <%= f.password_field :password, autocomplete: "current-password", placeholder: 'Password', class: "field" %>
+  <%= f.submit "Log in" %>
+
+  <%= render "devise/shared/links" %>
+<% end %>
+
