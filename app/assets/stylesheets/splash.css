@@ -32,3 +32,15 @@
   height: 50px;
   justify-content: center;
 }
+
+@media only screen and (min-width: 600px) {
+  .splash_button_container {
+    position: fixed;
+    width: 200px;
+    right: 20px;
+    bottom: 20px;
+    padding: 20px 0 20px 0;
+    border-radius: 5px;
+  }
+}
+
